@@ -1,0 +1,51 @@
+.h-100 {
+    height: 100%;
+}
+
+.btn--1 {
+    padding: 1rem 2rem;
+    background-color: $color-01;
+    border-radius: 1rem;
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.btn--2 {
+    width: 15rem;
+    height: 4rem;
+    background-color: $color-06;
+    border-radius: 5px;
+    color: $color-white;
+}
+
+.sidebar__list {
+    display: flex;
+    flex-direction: column;
+    gap : 2rem;
+    .sidebar__item-link {
+        display: block;
+        padding: 1.6rem ;
+        background-color: $color-01;
+        border-radius: 0px 12px 12px 0px;  
+        font-weight: 700;
+        &.active {
+            background-color: $color-02; 
+        }
+    } 
+    .navbar-collapse {
+        margin-top: 1rem;
+        padding-left: 2rem;
+        .nav-item + .nav-item {
+            margin-top: 0.5rem;
+        }
+    }
+}

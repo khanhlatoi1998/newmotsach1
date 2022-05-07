@@ -1,0 +1,30 @@
+@mixin flex( $align: flex-start, $justify: flex-start, $wrap: nowrap) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+}
+
+@mixin for-size ($breakpoint) {
+    @if $breakpoint == 1920 {
+        @media (min-width: 1920px) {
+            @content;
+        }
+    }
+    @if $breakpoint == 1112 {
+        @media (max-width: 1112px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == 1023 {
+        @media (max-width: 1023px) {
+            @content;
+        }
+    }
+    @if $breakpoint == 739 {
+        @media (max-width: 739px) {
+            @content;
+        }
+    }
+}

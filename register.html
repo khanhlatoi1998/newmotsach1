@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/scss/style2.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="./assets/fontawasome/css/all.min.css">
+    <title>Mot Sach</title>
+</head>
+
+<body>
+
+    <!-- HEADER : START -->
+    <header class="section-header register" id="header">
+        <div class="header__wraper">
+            <div class="navbar">
+                <div class="navbar__logo">
+                    <a href="#" class="logo-link">
+                        <img srcset="./assets/images/image01.png 2x" alt="" class="logo-image" />
+                    </a>
+                </div>
+                <div class="navbar__collapse">
+                    <ul class="navbar__list">
+                        <li class="nav-item">
+                            <a href="#Homepage" class="nav-link active">Homepage</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#introduce" class="nav-link">Introduce</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#FAQ" class="nav-link">FAQ</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a href="#login" class="nav-link register">REGISTER</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a href="#register" class="nav-link login">LOGIN</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btn__toggle">
+                    <span class="menu-icon"><i class="fa-solid fa-bars"></i></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER : END -->
+
+    <!-- HERO IMAGE : START -->
+    <section class="section__hero-image">   
+    </section>
+    <!-- HERO IMAGE : END -->
+
+    <!-- CONTENT : START -->
+    <main id="wraper-content">
+        <section class="section-register">
+            <div class="register__wraper">
+                <form id="contact__form" class="contact__form" action="" method="post" name="contact__form">
+                    <div class="form__control">
+                        <label class="form-label" for="name">Name</label>
+                        <input class="control-input" type="text" id="name" name="name" placeholder=""/>  
+                        <p class="form-message">Enter name</p>
+                    </div>
+                    <div class="form__control">
+                        <label class="form-label" for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder=""/>  
+                        <p class="form-message">Enter username@email.com</p>
+                    </div>
+                    <div class="form__control">
+                        <label class="form-label" for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder=""/>  
+                        <p class="form-message">Enter minimum character 6</p>
+                    </div>
+                    <!-- <div class="form__control">
+                        <label class="form-label" for="repeat-password">Repeat Password</label>
+                        <input type="password" id="repeat-password" name="repeat-password" placeholder=""/>  
+                        <p class="form-message">Enter password</p>
+                    </div> -->
+                    <div class="form__control">
+                        <label class="form-label" for="phone">Phone</label>
+                        <input type="number" id="phone" name="phone" placeholder=""/>  
+                        <p class="form-message">Enter phone</p>
+                    </div>
+                    <div class="form__control">
+                        <label class="form-label" for="date">Date of birth</label>
+                        <input type="date" id="date" name="date">
+                        <p class="form-message">Enter date of birth</p>
+                    </div>
+                    <div class="form__control">
+                        <label class="form-label" for="gender">Gender</label>
+                        <select name="gender" id="gender" value="men">
+                            <option value="men">Men</option>
+                            <option value="car">Car</option>
+                        </select>
+                        <p class="form-message">Enter date of birth</p>
+                    </div>
+                    <div class="register__btn">
+                        <button class="btn" type="submit">Register</button>
+                    </div>    
+                </form>
+                
+                <div class="register__or"> OR </div>
+                <div class="register__continue">
+                    <a href="#" class="continue__link-icon">
+                        <i class="fa-brands fa-facebook-square"></i>
+                    </a>
+                    <a href="#" class="continue__link-text">continue with facebook</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- CONTENT : END -->
+
+  
+
+
+    <script src="./assets/js/script.js?r=9"></script>
+</body>
+
+</html>
