@@ -1,0 +1,35 @@
+.section-footer {
+    padding: 3rem;
+    border-top: 1px solid $color-border;
+    .footer__link {
+        @include for-size(1112) {
+            text-align: center;
+        }
+        .link {
+            color: $color-link;
+            font-weight: 700;
+        }
+        li + li {
+            margin-top: 2rem;
+        }
+    }
+    .footer__text {
+        @include for-size (1112) {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .text-content {
+            margin-top: 3rem;
+            padding-right: 2rem;
+        }
+    }
+    .footer__contact {
+        @include flex(center);
+        gap: 3rem;
+        margin-top: 3rem;
+        @include for-size (1112) {
+            @include flex(center, center, wrap);
+        }
+    }
+}
+

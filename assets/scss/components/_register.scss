@@ -1,0 +1,120 @@
+.section-register {
+    padding: 2rem 2rem 5rem;
+}
+
+.register__wraper {
+    width: 65%;
+    margin: 0 auto;
+    label {
+        width: 20%;
+        display: inline-block;
+    }
+    input {
+        width: 79%;
+        padding: 1rem;
+        padding-left: 2rem;
+        border-radius: 0.7rem;
+        border-width: 1px;
+        outline: none;
+        position: relative;
+        @include for-size (739) {
+            width: 100%;
+            margin-top: 1rem;
+        }
+        &.input-err {
+            border: 1.5px solid $color-err;
+        }
+        &.input-success {
+            border: 1.5px solid $color-success;
+        }
+        &#phone {
+            background-image: none;
+        }
+    }
+    input[type=number]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+    .form-message {
+        margin-left: 23%;
+        display: none;
+        &.message-err {
+            color: $color-err;
+        }
+        &.message-success {
+            color: $color-success;
+        }
+    }
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        position: absolute;
+        right: 0rem;
+        top: 50%;
+        transform: translate(0, -50%);
+        background-image: url("../images/vector-input.png");
+        height: 2rem;
+        width: 2.3rem;
+        cursor: pointer;
+    }
+    select {
+        width: 79%;
+        padding: 1rem;
+        border-radius: 0.7rem;
+        @include for-size (739) {
+            width: 100%;
+            margin-top: 1rem;
+        }
+    }
+    .form__control {
+        padding: 2rem 0;
+    }
+    .register__btn {
+        text-align: center;
+        padding: 3rem 0;
+        .btn {
+            font-size: 2.7rem;
+            font-weight: 300;
+            background-color: $color-01;
+        }
+    }
+    .register__or {
+        text-align: center;
+        font-size: 2.8rem;
+        text-transform: uppercase;
+        position: relative;
+        &::before, 
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 45%;
+            height: 1px;
+            background-color: $color-text;
+            transform: translate(0, -50%);
+        }
+        &::before {
+            left: 0;
+        }
+        &::after {
+            right: 0;
+        }
+    }
+    .register__continue {
+        margin-top: 5rem;
+        font-size: 3.5rem;
+        @include flex(center, center);
+        gap: 0 3rem;
+        @include for-size(991) {
+            font-size: 2.5rem;
+            gap: 0 2rem;
+        }
+        .continue__link-icon {
+            font-size: 5rem;
+            @include for-size(991) {
+                font-size: 3rem;
+            }
+        }
+        .continue__link-text {
+            text-transform: uppercase;
+            margin-left: 3rem;
+        }
+    }
+}

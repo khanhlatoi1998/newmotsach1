@@ -1,0 +1,100 @@
+.page--16 {
+    padding: 4rem 0;
+    .sidebar__form {
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+        input {
+            flex-grow: 1;
+            background-color: $color-05;
+            border: none;
+            outline: none;
+        }
+        label {
+            font-size: 2.2rem;
+        }
+    }
+    .content__wraper {
+        font-size: 1.5rem;
+        text-align: center;
+        .block__image {
+            img {
+                max-width: 8rem;
+            }
+        }
+        .book__table-title {
+            max-width: 15rem;
+            font-weight: 700;
+        }
+        .book__table-author {
+            max-width: 10rem;
+        }
+        thead {
+            border-bottom: 1px solid black;
+            font-size: 2rem;
+            white-space: nowrap;
+        }
+        tbody {
+            vertical-align: top;
+            font-weight: 700;
+            width: auto;
+            overflow-x: auto;
+            td {
+                padding: 2rem 1rem;
+            }
+            .btn-red {
+                background-color: $color-06;
+                width: 12rem;
+                text-align: center;
+                padding: 1rem 0;
+                color: white;
+                border-radius: 5px;
+            }
+            .book__table-btn {
+                @include flex(flex-start, center, wrap);
+                gap: 1rem;
+            }
+            .book__table-read {
+                cursor: pointer;
+            }
+        }
+    }
+    @include for-size (1112) {
+        .table__wraper {
+            display: flex;
+            thead {
+                padding-right: 2rem;
+                border-right: 1px solid black;
+                border-bottom: 0;
+            }
+            thead tr {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+            tbody {
+                flex: 1;
+                display: flex;
+                padding-bottom: 3rem;
+                tr {
+                    padding: 0 2rem;
+                    display:  flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            td, th {
+                padding: 2rem 0 !important;
+                display:  table-cell;
+                height: 10rem;
+                vertical-align: middle;
+            }
+        }
+     
+       
+    }
+}

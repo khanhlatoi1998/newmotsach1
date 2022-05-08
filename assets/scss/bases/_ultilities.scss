@@ -1,0 +1,90 @@
+.h-100 {
+    height: 100%;
+}
+
+.btn--1 {
+    padding: 1rem 2rem;
+    background-color: $color-01;
+    border-radius: 1rem;
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.btn--2 {
+    width: 15rem;
+    height: 4rem;
+    background-color: $color-06;
+    border-radius: 5px;
+    color: $color-white;
+}
+
+.img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+table {
+    width: 100%;
+}
+
+.sidebar__list {
+    display: flex;
+    flex-direction: column;
+    gap : 2rem;
+    .sidebar__item-link {
+        display: block;
+        padding: 1.6rem ;
+        background-color: $color-01;
+        border-radius: 0px 12px 12px 0px;  
+        font-weight: 700;
+        &.active {
+            background-color: $color-02; 
+        }
+    } 
+    .navbar-collapse {
+        margin-top: 1rem;
+        padding-left: 2rem;
+        .nav-item + .nav-item {
+            margin-top: 0.5rem;
+        }
+    }
+}
+
+.pagination {
+    margin-top: 5rem;
+    text-align: center;
+}
+.pagination__list {
+    margin: 0 auto;
+    padding: 0.5rem;
+    display: inline-flex;
+    gap: 0 0.5rem;
+    font-size: 1.2rem;
+    background-color: $color-background-white;
+    .pagination__arrow {
+        width: 2rem;
+        height: 2rem;
+        @include flex(center, center);
+        border-radius: 50%;
+        color: $color-gray-50;
+        border: 1px solid $color-gray-50;
+        cursor: pointer;
+    }
+    .pagination__arrow-next {
+        color: black;
+        border-color: black;
+    }
+    .pagination-link {
+        width: 2rem;
+        height: 2rem;
+        @include flex(center, center);
+        border: 1px solid $color-gray-37;
+    }
+    .pagination-link.active {
+        background-color: $color-gray-37;
+    }
+}

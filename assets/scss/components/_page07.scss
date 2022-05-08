@@ -1,0 +1,61 @@
+.page--7 {
+    padding: 4rem 0 ;
+    .content__control {
+        @include flex(center, flex-end, wrap);
+        gap: 2rem 3rem;
+    }
+    .content__main {
+        margin-top: 3rem;
+        border: 1px solid black;
+        padding: 2rem;
+        background-color: $color-white;
+        .form-group {
+            @include flex(center, flex-start, wrap);
+            input {
+                border: 0;
+                border-bottom: 1px solid black;
+                font-size: 2rem;
+                max-width: 100%;
+            }
+            label {
+                font-weight: 700;
+            }
+        }
+        .content {
+            margin-top: 2rem;
+            @include flex(flex-start, space-between);
+            @include for-size (739) {
+                @include flex(flex-start, flex-start, wrap);
+                flex-direction: column;
+            }
+            gap: 2rem;
+            .content__image {
+                width: 13rem;
+                text-align: center;
+            }
+            .content__center {
+                width: 100%;
+                flex: 1;
+                padding: 2rem;
+                border: 1px solid black;
+                min-height: 30rem;
+                textarea {
+                    border: 0;
+                    border-bottom: 1px solid black;
+                    width: 100%;
+                }
+            }
+            .content__setting {
+                width: 25rem;
+                max-width: 100%;
+                .setting__title {
+                    font-family: 700;
+                    text-align: center;
+                }
+                p {
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+}
