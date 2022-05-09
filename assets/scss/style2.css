@@ -1675,6 +1675,24 @@ table {
   flex-wrap: nowrap;
 }
 
+.page--25 .block__heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.page--25 .block__heading .heading__btn-edit {
+  flex: 1;
+  margin-top: 4rem;
+  text-align: center;
+}
+.page--25 .block__heading button {
+  padding: 2rem 6rem;
+  background-color: #C0DDF9;
+  border-radius: 0.5rem;
+}
+
 .page--6 {
   padding: 3rem 0;
 }
