@@ -1,0 +1,88 @@
+.page--14 {
+    padding: 4rem  0;
+    .content__wraper {
+        width: 85%;
+        margin: 0 auto;
+        background-color: $color-08;
+        text-align: center;
+        padding: 4rem 2rem;
+        .content {
+            text-align: center;
+            width: 65%;
+            margin: 0 auto;
+            @include for-size (739) {
+                width: 100%;
+            }
+            .content__box {
+                background-color: rgb(243 119 95 / 92%);
+                padding: 0 2rem;
+                padding-bottom: 4rem;
+                .navbar__list {
+                    @include flex(center, space-between, wrap);
+                    @include for-size (739) {
+                        flex-direction: column;
+                    }
+                    gap: 1rem 2rem;
+                    padding: 1rem 0;
+                    color: $color-white;
+                    font-size: 1.5rem;
+                    .nav-item {
+                        padding: 1rem;
+                        cursor: pointer;
+                        &.active {
+                            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                        }
+                    }
+                }
+                .content__time {
+                    font-size: 8rem;
+                    @include for-size (739) {
+                        font-size: 4rem;
+                    }
+                }
+                .navbar__btn-start {
+                    margin-top: 1rem;
+                    padding: 2rem 6rem;
+                    font-weight: 700;
+                    font-size: 2.5rem;
+                    color: $color-08;
+                    background-color: $color-white;
+                    position: relative;
+                    @include for-size (575) {
+                        padding: 2rem 0;
+                        width: 100%;
+                    }
+                }
+                .navbar__btn-start::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 4px;
+                    background-color: #80808042;
+                }
+            }
+            p {
+                font-weight: 700;
+            }
+            .content__number {
+                margin-top: 1rem;
+            }
+            select {
+                margin-top: 3rem;
+                width: 100%;
+                border: none;
+                background-color: transparent;
+                border-bottom: 1px solid $color-white;
+            }
+            .content__btn-add {
+                margin-top: 3rem;
+                width: 100%; 
+                padding: 2rem 0;
+                background-color: rgba(250, 111, 111, 0.8);
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+        }
+    }
+}

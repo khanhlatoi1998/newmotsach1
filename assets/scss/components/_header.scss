@@ -75,7 +75,12 @@
     .navbar__collapse {
         flex-grow: 1;
         .navbar__list {
+<<<<<<< HEAD
             @include flex(flex-start, space-between);
+=======
+            @include flex(flex-start, center);
+            gap: 2rem;
+>>>>>>> 84ca3eec74fa6b4a68d533160cf9cece8c8d1513
             @include for-size(1023) {
                 display: none;
                 position: absolute;
@@ -111,5 +116,15 @@
             }
         }
     }
+<<<<<<< HEAD
 
+=======
+}
+
+// HEADER--3
+.header--3 {
+    .navbar__list {
+        gap: 7rem !important;
+    }
+>>>>>>> 84ca3eec74fa6b4a68d533160cf9cece8c8d1513
 }

@@ -1,0 +1,67 @@
+.page--21 {
+    padding: 3rem 0;
+    .form__book-editor__title {
+        font-size: 2.7rem;
+        text-align: center;
+    }
+    .form__book-editor {
+        width: 90%;
+        margin: 0 auto;
+        padding: 3rem;
+        padding-bottom: 6rem;
+        font-size: 1.8rem;
+        font-weight: 700;
+        position: relative;
+      
+        .form__group {
+            @include flex(center, flex-start, wrap);
+            gap: 2rem;
+            + .form__group {
+                margin-top: 2rem;
+            }
+        }
+        label {
+            min-width: 20rem;
+        }
+        input {
+            flex-grow: 1;
+            max-width: 100%;
+            padding: 1rem;
+            border-radius: 1rem;
+        }
+        .image-book {
+            @include flex(center, space-between, wrap);
+            margin-top: 2rem;
+            gap: 3rem;
+            .block__image {
+                order: 1;
+                img {
+                    max-width: 6rem;
+                }
+            }
+        }
+        .form__book-btn__create {
+            position: absolute;
+            bottom: 7rem;
+            right: 0rem;
+            background-color: $color-03;
+            color: $color-white;
+            padding: 1rem 1.5rem;
+            border: 1px solid black;
+            border-radius: 1rem;
+            @include for-size (991) {
+                bottom: 2rem;
+                right: 0;
+                transform: translate(-50%, 0);
+            }
+        }
+    }
+}
+
+.page--22 {
+    padding: 3rem 0;
+    .form__book-editor {
+        width: 100%;
+        padding-top: 2rem;
+    }
+}

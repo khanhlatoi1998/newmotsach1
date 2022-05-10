@@ -1,0 +1,43 @@
+.page--24 {
+    padding: 4rem 0;
+    .content__main {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .content {
+        padding: 2rem;
+        background-color: $color-white;
+        border: 1px solid black;
+        @include flex();
+        @include for-size (739) {
+            flex-direction: column;
+        }
+        gap: 2rem;
+        .content__image {
+            flex: 1;
+            max-width: 13rem;
+            img {
+                padding-top: 2rem;
+                max-width: 13rem;
+                object-fit: cover;
+            }
+        }
+        .content__text {
+            flex: 1;
+            width: 100%;
+            font-weight: 700;
+            P + p {
+                margin-top: 2rem;
+            }
+        }
+        .content__sp-control {
+            margin-top: 2rem;
+            @include flex(center, flex-end, wrap);
+            gap: 1rem;
+            @include for-size (739) {
+                @include flex(center, center, wrap);
+            }
+        }
+    }
+}

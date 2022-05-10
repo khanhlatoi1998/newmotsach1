@@ -54,6 +54,7 @@
             }
         }
     }
+<<<<<<< HEAD
     .pagination {
         margin-top: 5rem;
         text-align: center;
@@ -87,5 +88,14 @@
         .pagination-link.active {
             background-color: $color-gray-37;
         }
+=======
+}
+
+// PAGE--23 
+.page--23 {
+    .btn--2 {
+        background-color: $color-05 !important;
+        color: $color-text !important;
+>>>>>>> 84ca3eec74fa6b4a68d533160cf9cece8c8d1513
     }
 }

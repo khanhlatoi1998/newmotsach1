@@ -27,4 +27,12 @@
             @content;
         }
     }
+<<<<<<< HEAD
+=======
+    @if $breakpoint == 575 {
+        @media (max-width: 739px) {
+            @content;
+        }
+    }
+>>>>>>> 84ca3eec74fa6b4a68d533160cf9cece8c8d1513
 }

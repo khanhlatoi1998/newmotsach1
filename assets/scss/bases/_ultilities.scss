@@ -10,6 +10,17 @@
     font-size: 2.2rem;
 }
 
+<<<<<<< HEAD
+=======
+.btn--2 {
+    width: 15rem;
+    height: 4rem;
+    background-color: $color-06;
+    border-radius: 5px;
+    color: $color-white;
+}
+
+>>>>>>> 84ca3eec74fa6b4a68d533160cf9cece8c8d1513
 .img {
     position: absolute;
     top: 0;
@@ -19,12 +30,17 @@
     object-fit: cover; 
 }
 
+<<<<<<< HEAD
 .btn--2 {
     width: 15rem;
     height: 4rem;
     background-color: $color-06;
     border-radius: 5px;
     color: $color-white;
+=======
+table {
+    width: 100%;
+>>>>>>> 84ca3eec74fa6b4a68d533160cf9cece8c8d1513
 }
 
 .sidebar__list {
@@ -48,4 +64,42 @@
             margin-top: 0.5rem;
         }
     }
+<<<<<<< HEAD
+=======
+}
+
+.pagination {
+    margin-top: 5rem;
+    text-align: center;
+}
+.pagination__list {
+    margin: 0 auto;
+    padding: 0.5rem;
+    display: inline-flex;
+    gap: 0 0.5rem;
+    font-size: 1.2rem;
+    background-color: $color-background-white;
+    .pagination__arrow {
+        width: 2rem;
+        height: 2rem;
+        @include flex(center, center);
+        border-radius: 50%;
+        color: $color-gray-50;
+        border: 1px solid $color-gray-50;
+        cursor: pointer;
+    }
+    .pagination__arrow-next {
+        color: black;
+        border-color: black;
+    }
+    .pagination-link {
+        width: 2rem;
+        height: 2rem;
+        @include flex(center, center);
+        border: 1px solid $color-gray-37;
+    }
+    .pagination-link.active {
+        background-color: $color-gray-37;
+    }
+>>>>>>> 84ca3eec74fa6b4a68d533160cf9cece8c8d1513
 }

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/scss/style2.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="./assets/fontawasome/css/all.min.css">
+    <title>Mot Sach</title>
+</head>
+
+<body>
+
+    <!-- HEADER : START -->
+    <header class="section-header header--2" id="header">
+        <div class="header__wraper">
+            <div class="navbar">
+                <div class="navbar__logo">
+                    <a href="#" class="logo-link">
+                        <img srcset="./assets/images/image01.png 2x" alt="" class="logo-image" />
+                    </a>
+                </div>
+                <div class="navbar__collapse">
+                    <ul class="navbar__list">
+                        <li class="nav-item">
+                            <a href="#Homepage" class="nav-link active">Homepage</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#introduce" class="nav-link">Introduce</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Reading List</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#login" class="nav-link">My Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#register" class="nav-link">Track Reading</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#register" class="nav-link ">Book Recommendation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#register" class="nav-link">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar__user">
+                    <a href="#" class="user-name">Van Si Hung</a>
+                    <a href="#" class="user-role">Editor</a>
+                </div>
+                <div class="btn__toggle">
+                    <span class="menu-icon"><i class="fa-solid fa-bars"></i></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER : END -->
+
+    <!-- HERO IMAGE : START -->
+    <section class="section__hero-image">   
+    </section>
+    <!-- HERO IMAGE : END -->
+
+    <!-- CONTENT : START -->
+    <main id="wraper-content">
+        <section class="page--16">
+            <div class="container-fluid">
+                <div class="page16__wraper">
+                    <div class="row">
+                        <div class="col l-3 c-0">
+                            <div class="sidebar">
+                                <ul class="sidebar__list">
+                                    <li class="sidebar__item">
+                                        <a class="sidebar__item-link " href="#">ALL</a>
+                                    </li>
+                                    <li class="sidebar__item">
+                                        <a class="sidebar__item-link " href="#">Currently Reading</a>
+                                    </li>
+                                    <li class="sidebar__item">
+                                        <a class="sidebar__item-link " href="#">Want to Read</a>
+                                    </li>
+                                    <li class="sidebar__item">
+                                        <a class="sidebar__item-link " href="#">MY LIST</a>
+                                    </li>
+                                    <li class="sidebar__item">
+                                        <a class="sidebar__item-link active" href="#">Add List New</a>
+                                    </li>
+                                    <form action="post" id="sidebar__form" name="sidebar__form" class="sidebar__form">
+                                        <input type="text" />
+                                        <label for=""><i class="fas fa-plus-circle"></i></label>
+                                    </form>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col l-9 c-12">
+                            <div class="content__wraper">
+                                <table class="table__wraper">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Cover</th>
+                                            <th>Title</th>
+                                            <th>Author</th>
+                                            <th>Rating</th>
+                                            <th></th>
+                                            <th>Date Read</th>
+                                            <th>Date Add</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>
+                                                <div class="block__image">
+                                                    <img class="iamge" src="./assets/images/blog/image07.png" alt=""/>
+                                                </div>
+                                            </td>
+                                            <td class="book__table-title">
+                                                <p>Musicophilia: Tales of Music and the Brain</p>
+                                            </td>
+                                            <td class="book__table-author"><span>Sacks, Oliver</span></td>
+                                            <td>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </td>
+                                            <td class="book__table-read">Read</td>
+                                            <td><span>3/12/2022</span></td>
+                                            <td><span>3/12/2022</span></td>
+                                            <td class="book__table-btn">
+                                                <button type="button" class="btn-red">DELETE</button>
+                                                <button type="button" class="btn-red">View</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>
+                                                <div class="block__image">
+                                                    <img class="iamge" src="./assets/images/blog/image07.png" alt=""/>
+                                                </div>
+                                            </td>
+                                            <td class="book__table-title">
+                                                <p>Musicophilia: Tales of Music and the Brain</p>
+                                            </td>
+                                            <td class="book__table-author"><span>Sacks, Oliver</span></td>
+                                            <td>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </td>
+                                            <td class="book__table-read">Read</td>
+                                            <td><span>3/12/2022</span></td>
+                                            <td><span>3/12/2022</span></td>
+                                            <td class="book__table-btn">
+                                                <button type="button" class="btn-red">DELETE</button>
+                                                <button type="button" class="btn-red">View</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>
+                                                <div class="block__image">
+                                                    <img class="iamge" src="./assets/images/blog/image07.png" alt=""/>
+                                                </div>
+                                            </td>
+                                            <td class="book__table-title">
+                                                <p>Musicophilia: Tales of Music and the Brain</p>
+                                            </td>
+                                            <td class="book__table-author"><span>Sacks, Oliver</span></td>
+                                            <td>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </td>
+                                            <td class="book__table-read">Read</td>
+                                            <td><span>3/12/2022</span></td>
+                                            <td><span>3/12/2022</span></td>
+                                            <td class="book__table-btn">
+                                                <button type="button" class="btn-red">DELETE</button>
+                                                <button type="button" class="btn-red">View</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+            
+                                <div class="pagination">
+                                    <ul class="pagination__list">
+                                        <li class="pagination__arrow pagination__arrow-previous">
+                                            <i class="fa-solid fa-angle-left"></i>
+                                        </li>
+                                        <li class="pagination-item">
+                                            <a href="#" class="pagination-link active">1</a>
+                                        </li>
+                                        <li class="pagination-item">
+                                            <a href="#" class="pagination-link">2</a>
+                                        </li>
+                                        <li class="pagination-item">
+                                            <a href="#" class="pagination-link">3</a>
+                                        </li>
+                                        <li class="pagination-item">
+                                            <a href="#" class="pagination-link">4</a>
+                                        </li>
+                                        <li class="pagination__arrow pagination__arrow-next">
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </li>
+                                    </ul>
+                                </div> 
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- CONTENT : END -->
+
+    <!-- FOOTER : START -->
+    <footer class="section-footer" id="footer">
+        <div class="footer__wraper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col l-3 c-12">
+                        <ul class="footer__link">
+                            <li class="link-item">
+                                <a class="link" href="#">Subscribe to theMotSach</a>
+                            </li>
+                            <li class="link-item">
+                                <a class="link" href="#">Books F.A.Q.</a>
+                            </li>
+                            <li class="link-item">
+                                <a class="link" href="#">Email the Book Review</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-6 c-12">
+                        <div class="footer__text">
+                            <h3 class="text-title">SIGN UP FOR RECEIVE NEW BOOKS REVIEW NEWSLETTER</h3>
+                            <p class="text-content">Every Friday, be the first to see reviews, news and features in MotSach Book Review.</p>
+                        </div>
+                    </div>
+                    <div class="col l-3 c-12">
+                        <div class="footer__contact">
+                            <div class="contact-icon">
+                                <a href="#" class="icon-link">                    
+                                    <img srcset="./assets/images/contact-fb.png 2x" alt="">
+                                </a>
+                            </div>
+                            <div class="btn--1 contact-btn"><a href="#" class="contact-link">CONTACT</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER : END -->
+
+</body>
+
+</html>

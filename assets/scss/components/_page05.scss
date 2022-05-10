@@ -116,4 +116,25 @@
             @include flex(center, space-around);
         }
     }
+<<<<<<< HEAD
+=======
+}
+
+// PAGE--25
+.page--25 {
+    .block__heading {
+        @include flex(flex-start, space-between, wrap);
+        gap: 2rem;
+        .heading__btn-edit {
+            flex: 1;
+            margin-top: 4rem;
+            text-align: center;
+        }
+        button {
+            padding: 2rem 6rem;
+            background-color: $color-01;
+            border-radius: 0.5rem;
+        }
+    }
+>>>>>>> 84ca3eec74fa6b4a68d533160cf9cece8c8d1513
 }
